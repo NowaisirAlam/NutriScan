@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -36,6 +36,9 @@
 		C47A29672B7088CC002AD677 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = C47A29662B7088CC002AD677 /* Alamofire */; };
 		C47A29692B708B97002AD677 /* NutritionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47A29682B708B97002AD677 /* NutritionModel.swift */; };
 		C48CC2A82B7AB6DB00605D37 /* SimpleDailyChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48CC2A72B7AB6DB00605D37 /* SimpleDailyChartView.swift */; };
+		C4B797D62DE271AD0034BEAE /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4B797D52DE271AD0034BEAE /* WidgetKit.framework */; };
+		C4B797D82DE271AD0034BEAE /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4B797D72DE271AD0034BEAE /* SwiftUI.framework */; };
+		C4B797E52DE271AE0034BEAE /* NutriScanWidgetsExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = C4B797D32DE271AD0034BEAE /* NutriScanWidgetsExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		C4BC54752B6EF30000A435AC /* Geist-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = C4BC54742B6EF30000A435AC /* Geist-Regular.otf */; };
 		C4BC54762B6EF30000A435AC /* Geist-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = C4BC54742B6EF30000A435AC /* Geist-Regular.otf */; };
 		C4BC54772B6EF30000A435AC /* Geist-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = C4BC54742B6EF30000A435AC /* Geist-Regular.otf */; };
@@ -72,7 +75,28 @@
 			remoteGlobalIDString = C45ADA1F2B69E277001C34F9;
 			remoteInfo = NutriScan;
 		};
+		C4B797E32DE271AE0034BEAE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C45ADA182B69E277001C34F9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C4B797D22DE271AD0034BEAE;
+			remoteInfo = NutriScanWidgetsExtension;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C4B797E62DE271AE0034BEAE /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				C4B797E52DE271AE0034BEAE /* NutriScanWidgetsExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		C405643F2B76E0AF002A2BFC /* NutriScan.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NutriScan.entitlements; sourceTree = "<group>"; };
@@ -105,9 +129,13 @@
 		C45ADA3C2B69E27A001C34F9 /* NutriScanUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NutriScanUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C45ADA402B69E27A001C34F9 /* NutriScanUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutriScanUITests.swift; sourceTree = "<group>"; };
 		C45ADA422B69E27A001C34F9 /* NutriScanUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutriScanUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C4670C142DE276D5001A1B3D /* Secrets.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Secrets.xcconfig; sourceTree = "<group>"; };
 		C47A29612B70838C002AD677 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		C47A29682B708B97002AD677 /* NutritionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionModel.swift; sourceTree = "<group>"; };
 		C48CC2A72B7AB6DB00605D37 /* SimpleDailyChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleDailyChartView.swift; sourceTree = "<group>"; };
+		C4B797D32DE271AD0034BEAE /* NutriScanWidgetsExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = NutriScanWidgetsExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4B797D52DE271AD0034BEAE /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		C4B797D72DE271AD0034BEAE /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		C4BC54742B6EF30000A435AC /* Geist-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Geist-Regular.otf"; sourceTree = "<group>"; };
 		C4BC547C2B6EFC5100A435AC /* BarCodeScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarCodeScannerView.swift; sourceTree = "<group>"; };
 		C4BC54802B6F1B6400A435AC /* ScannerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerViewModel.swift; sourceTree = "<group>"; };
@@ -123,6 +151,20 @@
 		C4FEE6132B79BB04004477F0 /* Defaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Defaults.swift; sourceTree = "<group>"; };
 		C4FEE6152B79C58B004477F0 /* ThemeSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeSelectionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		C4B797E92DE271AE0034BEAE /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = C4B797D22DE271AD0034BEAE /* NutriScanWidgetsExtension */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		C4B797D92DE271AD0034BEAE /* NutriScanWidgets */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (C4B797E92DE271AE0034BEAE /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = NutriScanWidgets; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		C45ADA1D2B69E277001C34F9 /* Frameworks */ = {
@@ -144,6 +186,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4B797D02DE271AD0034BEAE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4B797D82DE271AD0034BEAE /* SwiftUI.framework in Frameworks */,
+				C4B797D62DE271AD0034BEAE /* WidgetKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,9 +266,12 @@
 		C45ADA172B69E277001C34F9 = {
 			isa = PBXGroup;
 			children = (
+				C4670C142DE276D5001A1B3D /* Secrets.xcconfig */,
 				C45ADA222B69E277001C34F9 /* NutriScan */,
 				C45ADA352B69E27A001C34F9 /* NutriScanTests */,
 				C45ADA3F2B69E27A001C34F9 /* NutriScanUITests */,
+				C4B797D92DE271AD0034BEAE /* NutriScanWidgets */,
+				C4B797D42DE271AD0034BEAE /* Frameworks */,
 				C45ADA212B69E277001C34F9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -228,6 +282,7 @@
 				C45ADA202B69E277001C34F9 /* NutriScan.app */,
 				C45ADA322B69E27A001C34F9 /* NutriScanTests.xctest */,
 				C45ADA3C2B69E27A001C34F9 /* NutriScanUITests.xctest */,
+				C4B797D32DE271AD0034BEAE /* NutriScanWidgetsExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -272,6 +327,15 @@
 				C45ADA422B69E27A001C34F9 /* NutriScanUITestsLaunchTests.swift */,
 			);
 			path = NutriScanUITests;
+			sourceTree = "<group>";
+		};
+		C4B797D42DE271AD0034BEAE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C4B797D52DE271AD0034BEAE /* WidgetKit.framework */,
+				C4B797D72DE271AD0034BEAE /* SwiftUI.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		C4D58E222B6EEDB100E12C8B /* Model */ = {
@@ -325,10 +389,12 @@
 				C45ADA1C2B69E277001C34F9 /* Sources */,
 				C45ADA1D2B69E277001C34F9 /* Frameworks */,
 				C45ADA1E2B69E277001C34F9 /* Resources */,
+				C4B797E62DE271AE0034BEAE /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				C4B797E42DE271AE0034BEAE /* PBXTargetDependency */,
 			);
 			name = NutriScan;
 			packageProductDependencies = (
@@ -374,6 +440,28 @@
 			productReference = C45ADA3C2B69E27A001C34F9 /* NutriScanUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		C4B797D22DE271AD0034BEAE /* NutriScanWidgetsExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4B797EA2DE271AE0034BEAE /* Build configuration list for PBXNativeTarget "NutriScanWidgetsExtension" */;
+			buildPhases = (
+				C4B797CF2DE271AD0034BEAE /* Sources */,
+				C4B797D02DE271AD0034BEAE /* Frameworks */,
+				C4B797D12DE271AD0034BEAE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				C4B797D92DE271AD0034BEAE /* NutriScanWidgets */,
+			);
+			name = NutriScanWidgetsExtension;
+			packageProductDependencies = (
+			);
+			productName = NutriScanWidgetsExtension;
+			productReference = C4B797D32DE271AD0034BEAE /* NutriScanWidgetsExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -381,8 +469,8 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1520;
-				LastUpgradeCheck = 1520;
+				LastSwiftUpdateCheck = 1630;
+				LastUpgradeCheck = 1630;
 				TargetAttributes = {
 					C45ADA1F2B69E277001C34F9 = {
 						CreatedOnToolsVersion = 15.2;
@@ -394,6 +482,9 @@
 					C45ADA3B2B69E27A001C34F9 = {
 						CreatedOnToolsVersion = 15.2;
 						TestTargetID = C45ADA1F2B69E277001C34F9;
+					};
+					C4B797D22DE271AD0034BEAE = {
+						CreatedOnToolsVersion = 16.3;
 					};
 				};
 			};
@@ -416,6 +507,7 @@
 				C45ADA1F2B69E277001C34F9 /* NutriScan */,
 				C45ADA312B69E27A001C34F9 /* NutriScanTests */,
 				C45ADA3B2B69E27A001C34F9 /* NutriScanUITests */,
+				C4B797D22DE271AD0034BEAE /* NutriScanWidgetsExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -445,6 +537,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				C4BC54772B6EF30000A435AC /* Geist-Regular.otf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4B797D12DE271AD0034BEAE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -513,6 +612,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C4B797CF2DE271AD0034BEAE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -525,6 +631,11 @@
 			isa = PBXTargetDependency;
 			target = C45ADA1F2B69E277001C34F9 /* NutriScan */;
 			targetProxy = C45ADA3D2B69E27A001C34F9 /* PBXContainerItemProxy */;
+		};
+		C4B797E42DE271AE0034BEAE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C4B797D22DE271AD0034BEAE /* NutriScanWidgetsExtension */;
+			targetProxy = C4B797E32DE271AE0034BEAE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -564,6 +675,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = MR3H259R5X;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -627,6 +739,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = MR3H259R5X;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -650,6 +763,7 @@
 		};
 		C45ADA472B69E27A001C34F9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C4670C142DE276D5001A1B3D /* Secrets.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -657,7 +771,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 10;
 				DEVELOPMENT_ASSET_PATHS = "\"NutriScan/Preview Content\"";
-				DEVELOPMENT_TEAM = MR3H259R5X;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -686,6 +799,7 @@
 		};
 		C45ADA482B69E27A001C34F9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C4670C142DE276D5001A1B3D /* Secrets.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -693,7 +807,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 10;
 				DEVELOPMENT_ASSET_PATHS = "\"NutriScan/Preview Content\"";
-				DEVELOPMENT_TEAM = MR3H259R5X;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -723,11 +836,9 @@
 		C45ADA4A2B69E27A001C34F9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 10;
-				DEVELOPMENT_TEAM = MR3H259R5X;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				MARKETING_VERSION = 1.0;
@@ -743,11 +854,9 @@
 		C45ADA4B2B69E27A001C34F9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 10;
-				DEVELOPMENT_TEAM = MR3H259R5X;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				MARKETING_VERSION = 1.0;
@@ -763,10 +872,8 @@
 		C45ADA4D2B69E27A001C34F9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 10;
-				DEVELOPMENT_TEAM = MR3H259R5X;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.jerryzjx.NutriScanUITests;
@@ -781,10 +888,8 @@
 		C45ADA4E2B69E27A001C34F9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 10;
-				DEVELOPMENT_TEAM = MR3H259R5X;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.jerryzjx.NutriScanUITests;
@@ -793,6 +898,60 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = NutriScan;
+			};
+			name = Release;
+		};
+		C4B797E72DE271AE0034BEAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NutriScanWidgets/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = NutriScanWidgets;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jerryzjx.NutriScan.NutriScanWidgets;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C4B797E82DE271AE0034BEAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NutriScanWidgets/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = NutriScanWidgets;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jerryzjx.NutriScan.NutriScanWidgets;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -831,6 +990,15 @@
 			buildConfigurations = (
 				C45ADA4D2B69E27A001C34F9 /* Debug */,
 				C45ADA4E2B69E27A001C34F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C4B797EA2DE271AE0034BEAE /* Build configuration list for PBXNativeTarget "NutriScanWidgetsExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4B797E72DE271AE0034BEAE /* Debug */,
+				C4B797E82DE271AE0034BEAE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
