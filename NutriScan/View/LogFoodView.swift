@@ -434,11 +434,13 @@ struct ItemDetailView: View {
         }
         
         func addFoodItem(foodItem: Item) {
+            let newItem = Item(from: foodItem, timestamp: Date())
+                   
             if isHealthKitEnabled {
                 let healthKitManager = HealthKitManager()
                 
                 
-                healthKitManager.saveNutritionalDataFromItem(for: foodItem) { success, error in
+                healthKitManager.saveNutritionalDataFromItem(for: newItem) { success, error in
                     
                     if success {
                         
@@ -450,7 +452,6 @@ struct ItemDetailView: View {
                 }
             }
             withAnimation {
-                let newItem = Item(from: foodItem)
                 modelContext.insert(newItem)
                 dismiss()
             }
