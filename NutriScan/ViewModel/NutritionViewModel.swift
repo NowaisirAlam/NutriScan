@@ -100,8 +100,6 @@ class NutritionViewModel: ObservableObject {
                 return item.nfSodium
             case .cholesterol:
                 return item.nfCholesterol
-            default:
-                return nil
             }
         }
     
