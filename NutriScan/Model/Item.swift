@@ -11,24 +11,24 @@ import SwiftData
 @Model
 class Item {
     var timestamp: Date
-    let foodName: String
-    let brandName: String?
-    let servingQty: Int?
-    let servingUnit: String?
-    let servingWeightGrams: Double?
-    let nfMetricQty: Double?
-    let nfMetricUom: String?
-    let nfCalories: Double? = 0
-    let nfTotalFat: Double? = 0
-    let nfSaturatedFat: Double?
-    let nfCholesterol: Double?
-    let nfSodium: Double?
-    let nfTotalCarbohydrate: Double? = 0
-    let nfDietaryFiber: Double?
-    let nfSugars: Double?
-    let nfProtein: Double? = 0
-    let nfPotassium: Double?
-    let nfP: Double?
+    var foodName: String
+    var brandName: String?
+    var servingQty: Int?
+    var servingUnit: String?
+    var servingWeightGrams: Double?
+    var nfMetricQty: Double?
+    var nfMetricUom: String?
+    var nfCalories: Double? = 0
+    var nfTotalFat: Double? = 0
+    var nfSaturatedFat: Double?
+    var nfCholesterol: Double?
+    var nfSodium: Double?
+    var nfTotalCarbohydrate: Double? = 0
+    var nfDietaryFiber: Double?
+    var nfSugars: Double?
+    var nfProtein: Double? = 0
+    var nfPotassium: Double?
+    var nfP: Double?
 
     init(timestamp: Date, foodName: String, brandName: String?, servingQty: Int?, servingUnit: String?, servingWeightGrams: Double?, nfMetricQty: Double?, nfMetricUom: String?, nfCalories: Double?, nfTotalFat: Double?, nfSaturatedFat: Double?, nfCholesterol: Double?, nfSodium: Double?, nfTotalCarbohydrate: Double?, nfDietaryFiber: Double?, nfSugars: Double?, nfProtein: Double?, nfPotassium: Double?, nfP: Double?) {
         self.timestamp = timestamp
@@ -58,5 +58,9 @@ class Item {
     
     convenience init(from item: Item) {
         self.init(timestamp: Date(), foodName: item.foodName, brandName: item.brandName, servingQty: item.servingQty, servingUnit: item.servingUnit, servingWeightGrams: item.servingWeightGrams, nfMetricQty: item.nfMetricQty, nfMetricUom: item.nfMetricUom, nfCalories: item.nfCalories, nfTotalFat: item.nfTotalFat, nfSaturatedFat: item.nfSaturatedFat, nfCholesterol: item.nfCholesterol, nfSodium: item.nfSodium, nfTotalCarbohydrate: item.nfTotalCarbohydrate, nfDietaryFiber: item.nfDietaryFiber, nfSugars: item.nfSugars, nfProtein: item.nfProtein, nfPotassium: item.nfPotassium, nfP: item.nfP)
+    }
+    
+    convenience init(from item: Item, timestamp: Date) {
+        self.init(timestamp: timestamp, foodName: item.foodName, brandName: item.brandName, servingQty: item.servingQty, servingUnit: item.servingUnit, servingWeightGrams: item.servingWeightGrams, nfMetricQty: item.nfMetricQty, nfMetricUom: item.nfMetricUom, nfCalories: item.nfCalories, nfTotalFat: item.nfTotalFat, nfSaturatedFat: item.nfSaturatedFat, nfCholesterol: item.nfCholesterol, nfSodium: item.nfSodium, nfTotalCarbohydrate: item.nfTotalCarbohydrate, nfDietaryFiber: item.nfDietaryFiber, nfSugars: item.nfSugars, nfProtein: item.nfProtein, nfPotassium: item.nfPotassium, nfP: item.nfP)
     }
 }
