@@ -16,11 +16,14 @@ class APIManager {
     
     private let baseURL = "https://trackapi.nutritionix.com/v2/search/item"
     
+    private let apiKey = Bundle.main.object(forInfoDictionaryKey: "API_KEY") as? String
+    private let appId = Bundle.main.object(forInfoDictionaryKey: "APP_ID") as? String
+    
     func searchItem(with barcode: String) async throws -> [FoodItem] {
         let headers: HTTPHeaders = [
             "Content-Type": "application/json",
-            "x-app-id": "APP-ID",
-            "x-app-key": "API-KEY",
+            "x-app-id": appId!,
+            "x-app-key": apiKey!,
         ]
         
         let parameters: [String: String] = ["upc": barcode]
