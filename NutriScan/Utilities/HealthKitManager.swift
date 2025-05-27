@@ -40,7 +40,7 @@ class HealthKitManager: ObservableObject {
 
         healthStore.requestAuthorization(toShare: writeDataTypes, read: readDataTypes) { success, error in
             if !success {
-                
+                print("Healthkit auth failed")
             }
         }
     }
