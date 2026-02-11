@@ -212,3 +212,4 @@ iOSInjectionProject/
 
 # End of https://www.toptal.com/developers/gitignore/api/macos,ruby,swift,fastlane,xcode
 Secrets.xcconfig
+README.md
